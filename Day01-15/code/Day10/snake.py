@@ -102,14 +102,12 @@ class Food(GameObject):
         """
         super().__init__(x, y, color)
         self._size = size
-        self._hidden = False
+        self._hidden = True
 
     def draw(self, screen):
-        if not self._hidden:
             pygame.draw.circle(screen, self._color,
                                (self._x + self._size // 2, self._y + self._size // 2),
                                self._size // 2, 0)
-        self._hidden = not self._hidden
 
 
 class SnakeNode(GameObject):

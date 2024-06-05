@@ -28,8 +28,11 @@ def main():
     print(fruits)
     # 删除元素
     del fruits[1]
-    fruits.pop()
-    fruits.pop(0)
+    print(fruits)
+    fruits.pop() #默认弹出最后一个元素
+    print(fruits)    
+    fruits.pop(0) #弹出第0个元素
+    print(fruits)    
     fruits.remove('apple')
     print(fruits)
 

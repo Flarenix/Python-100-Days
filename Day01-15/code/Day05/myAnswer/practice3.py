@@ -11,6 +11,9 @@ def isPrime(num):
 
 for i in range(100):
     if(isPrime(i)): print(i)
+    
+for i in range(100):
+    if(isPrime(i)): print(i)
 
 
 print({0},"nmihao1")
